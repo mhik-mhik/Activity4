@@ -89,3 +89,15 @@ VALUES(1,'Fido','Dog','Golden Retriever',2018-03-15,'Male','Golden',1),
 (8,'Simba','Cat','Bengal',2010-06-10,'Male','Spotted Rosetted',8),
 (9,'Max','Dog','Dachshund',2020-07-14,'Male','Black and Tan',9),
 (10,'Cleo','Cat','Ragdoll',2019-0512-22,'Female','Seal Point',10);
+
+INSERT INTO appointments (appointmentid, animalid, appointmentdate, reason)
+VALUES (1, 1, '2023-11-09', 'Annual checkup'),
+       (2, 2, '2023-11-10', 'Vaccination'),
+       (3, 3, '2023-11-11', 'Surgery'),
+       (4, 4, '2023-11-12', 'Checkup'),
+       (5, 5, '2023-11-13', 'Vaccination'),
+       (6, 6, '2023-11-14', 'Surgery'),
+       (7, 7, '2023-11-15', 'Checkup'),
+       (8, 8, '2023-11-16', 'Vaccination'),
+       (9, 9, '2023-11-17', 'Surgery'),
+       (10, 10, '2023-11-18', 'Checkup');

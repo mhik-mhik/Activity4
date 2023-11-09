@@ -48,3 +48,17 @@ CREATE TABLE invoices (
     paymentdate DATE,
     FOREIGN KEY (appointmentid) REFERENCES appointments(appointmentid)
 );
+
+CREATE TABLE IF NOT EXISTS public.medicalrecords
+(
+record_id INT NOT NULL,
+animnal_id INT NOT NULL,
+record_date TIMESTAMP NOT NULL,
+doctor_id INT NOT NULL,
+diagnosis TEXT NOT NULL,
+prescription TEXT NOT NULL,
+notes TEXT NOT NULL,
+PRIMARY KEY (record_id),
+FOREIGN KEY (animal_id) REFERENCES animals(animal_id)
+FOREIGN KEY (doctor_id) REFERENCES doctors(doctor_id)
+);

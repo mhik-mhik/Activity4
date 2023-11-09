@@ -22,3 +22,10 @@ owner_id INT NOT NULL,
 PRIMARY KEY(animalid),
 FOREIGN KEY (owner_id) REFERENCES owners(owner_id)
 );
+
+CREATE TABLE appointments (
+    appointmentid INT PRIMARY KEY,
+    animalid INT,
+    appointmentdate DATE,
+    reason VARCHAR(255)
+);

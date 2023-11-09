@@ -29,3 +29,14 @@ CREATE TABLE appointments (
     appointmentdate DATE,
     reason VARCHAR(255)
 );
+
+CREATE TABLE IF NOT EXISTS public.doctors
+(
+doctor_id INT NOT NULL,
+d_first_name VARCHAR(50) NOT NULL,
+d_last_name VARCHAR(50) NOT NULL,
+speciality VARCHAR(100) NOT NULL,
+phone VARCHAR(15) NOT NULL,
+email VARCHAR(100) NOT NULL,
+PRIMARY KEY (doctor_id)
+);

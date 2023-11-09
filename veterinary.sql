@@ -40,3 +40,11 @@ phone VARCHAR(15) NOT NULL,
 email VARCHAR(100) NOT NULL,
 PRIMARY KEY (doctor_id)
 );
+
+CREATE TABLE invoices (
+    invoicesid INT,
+    appointmentid INT,
+    totalamount NUMERIC(10, 2),
+    paymentdate DATE,
+    FOREIGN KEY (appointmentid) REFERENCES appointments(appointmentid)
+);
